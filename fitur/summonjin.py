@@ -61,7 +61,6 @@ def manggil_jin():
         else:
             config.count_jin_pembangun += 1
 
-        time.sleep(1)
         print("\nMengumpulkan sesajen...")
         time.sleep(1)
         print("Menyerahkan sesajen...")

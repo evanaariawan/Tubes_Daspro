@@ -1,8 +1,9 @@
+from fitur import load
 import command
 import argparse
 import os
 import time
-from fitur import load
+
 
 # Membuat parser
 parser = argparse.ArgumentParser(description='Mencari folder dan meload file di dalamnya.')
@@ -21,6 +22,7 @@ if os.path.exists(target_dir):
     time.sleep(2)
     print("Selamat Datang di Tubes Daspro!, Program Membangun Candi.")
     print('Ketik "help" untuk mengetahui perintah apa yang bisa Anda akses!')
+    print()
     
     # Menjalankan main loop program
     while True:
