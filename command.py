@@ -1,5 +1,5 @@
 from fitur import info, keluar, log, summonjin, hapusjin, ubahjin, batch, kumpul, bangun, roro, laporan, save
-import fitur.config as config
+import config
 
 
 # Menerima masukan command dan menjalankan prosedur sesuai perintah yang dimasukan.

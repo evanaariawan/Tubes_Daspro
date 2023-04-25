@@ -1,4 +1,4 @@
-import fitur.config as config 
+import config
 
 def help():
     # Menampilkan perintah yang dapat diakses sesuai dengan role saat ini
