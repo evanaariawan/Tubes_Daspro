@@ -13,9 +13,10 @@ def save():
         os.mkdir(folder_save_path)
         time.sleep(2)
 
-    # Membuat path folder save baru di dalam folder save sebelumnya
+    # Membuat path folder save baru di dalam folder save sebelumnya jika belum ada
     new_save_folder = os.path.join(folder_save_path, folder)
-    os.mkdir(new_save_folder)
+    if not os.path.exists(new_save_folder):
+        os.mkdir(new_save_folder)
     print(f"Membuat folder save/{folder}...")
     time.sleep(2)
 
