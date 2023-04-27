@@ -7,7 +7,7 @@ import config
 def load(folder):
     idx = 0
     # Load data user ke dalam matriks users
-    with open(f"{folder}/user.csv") as f:
+    with open(f"save/{folder}/user.csv") as f:
         for line in f:
             word = "" 
             i = 0
@@ -31,7 +31,7 @@ def load(folder):
 
     idx = 0
     # Load data matriks bahan bangunan
-    with open(f"{folder}/bahan_bangunan.csv") as f:
+    with open(f"save/{folder}/bahan_bangunan.csv") as f:
         for line in f:
             word = ""
             i = 0
@@ -59,7 +59,7 @@ def load(folder):
 
     idx = 0
     # Load data matriks candi
-    with open(f"{folder}/candi.csv") as f:
+    with open(f"save/{folder}/candi.csv") as f:
         for line in f:
             word = ""
             i = 0

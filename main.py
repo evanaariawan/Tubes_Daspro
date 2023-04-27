@@ -11,10 +11,11 @@ parser.add_argument("nama_folder")
 args = parser.parse_args()
 
 # Menentukan path folder yang akan diloadt
-target_dir = os.path.join(os.getcwd(),args.nama_folder) 
+dir_data_awal = os.path.join(os.getcwd(),args.nama_folder) 
+dir_data_save = os.path.join(os.getcwd(), 'save', args.nama_folder)
 
 # Ada atau tidak folder yang dituju, jika ada jalankan program
-if os.path.exists(target_dir): 
+if os.path.exists(dir_data_awal) or  os.path.exists(dir_data_save): 
     # Meload file - file pada folder tersebut ke dalam matriks
     load.load(args.nama_folder)
 
